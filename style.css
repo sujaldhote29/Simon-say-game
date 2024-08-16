@@ -1,42 +1,75 @@
 body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 3rem;
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
 }
 
 .btn-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.line-one, .line-two {
     display: flex;
     justify-content: center;
-
 }
 
-.yellow {
-    background-color: #f99b45;
+.btn {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    line-height: 80px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 15px;
+    user-select: none;
+    color: white;
+    transition: all 0.2s;
 }
 
-.green {
-    background-color: #63aac0;
-}
-
-.red {
-    background-color: #d95980;
-}
-
-.purple {
-    background-color: #819ff9;
-}
-
+.red { background-color: red; }
+.yellow { background-color: yellow; color: black; }
+.green { background-color: green; }
+.purple { background-color: purple; }
 
 .flash {
-    background-color: white;
+    opacity: 0.6;
 }
 
 .userFlash {
-    background-color: green;
+    opacity: 0.8;
+}
+
+.darken {
+    opacity: 0.5; /* Darkens the button by reducing its opacity */
+}
+
+/* Make the game responsive */
+@media (max-width: 600px) {
+    .btn {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
